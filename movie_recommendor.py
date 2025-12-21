@@ -12,9 +12,9 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from google.colab import drive
-drive.mount('/content/drive')
+drive.mount('/content/drive') //add movie dataset path
 import os
-os.chdir('/content/drive/MyDrive/SKILLIT Courses/AI Level 2/Clustering/Movie_recommendation')
+os.chdir('/content/drive/MyDrive/SKILLIT Courses/AI Level 2/Clustering/Movie_recommendation') //add movie dataset path
 df = pd.read_csv("movie_dataset.csv")
 print(df.columns)
 def get_title_from_index(index):
